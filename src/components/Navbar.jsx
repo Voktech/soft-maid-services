@@ -8,7 +8,6 @@ export default function Navbar() {
         <span>Soft Maid</span>
       </a>
       <ul className="nav-links">
-        <li><a href="#calculator">Price Estimator</a></li>
         <li><a href="#services">Our Services</a></li>
         <li><a href="#how-it-works">How It Works</a></li>
         <li><a href="#testimonials">Reviews</a></li>
