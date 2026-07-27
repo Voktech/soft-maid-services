@@ -1,0 +1,463 @@
+/* ==========================================================================
+   Soft Maid Services Qatar - Luxury Light Mode Blue Theme
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap');
+
+:root {
+  /* Light Mode Royal Blue Palette */
+  --bg-light: #F4F8FA;
+  --bg-surface: #FFFFFF;
+  --bg-card: #FFFFFF;
+  --bg-glass: rgba(255, 255, 255, 0.9);
+  
+  --primary: #2563EB;
+  --primary-dark: #1D4ED8;
+  --primary-light: #EFF6FF;
+  --primary-glow: rgba(37, 99, 235, 0.25);
+  --secondary: #0284C7;
+  --accent-blue: #38BDF8;
+  
+  --whatsapp: #25D366;
+  --whatsapp-dark: #128C7E;
+  --whatsapp-glow: rgba(37, 211, 102, 0.35);
+  
+  --text-main: #0F172A;
+  --text-muted: #64748B;
+  --border-light: #E2E8F0;
+  --border-blue: rgba(37, 99, 235, 0.3);
+  
+  --radius-sm: 10px;
+  --radius-md: 18px;
+  --radius-lg: 28px;
+  --radius-full: 9999px;
+
+  --font-heading: 'Outfit', sans-serif;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
+  --transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-light);
+  color: var(--text-main);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Top Notification Banner */
+.top-bar {
+  background: #0F172A;
+  color: #94A3B8;
+  padding: 10px 32px;
+  font-size: 0.85rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-bar-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #F8FAFC;
+}
+
+/* Glass Navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: var(--bg-glass);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--border-light);
+  padding: 18px 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-decoration: none;
+  font-family: var(--font-heading);
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--text-main);
+  letter-spacing: -0.5px;
+}
+
+.logo-badge {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: #FFF;
+  width: 42px;
+  height: 42px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 14px var(--primary-glow);
+}
+
+.nav-links {
+  display: flex;
+  gap: 36px;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text-muted);
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: var(--transition);
+}
+
+.nav-links a:hover {
+  color: var(--primary);
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 28px;
+  border-radius: var(--radius-full);
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: var(--transition);
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  color: #FFFFFF;
+  box-shadow: 0 8px 20px var(--primary-glow);
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(37, 99, 235, 0.4);
+}
+
+.btn-whatsapp {
+  background: linear-gradient(135deg, #25D366, #128C7E);
+  color: #FFFFFF;
+  box-shadow: 0 8px 20px var(--whatsapp-glow);
+}
+
+.btn-whatsapp:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(37, 211, 102, 0.4);
+}
+
+.btn-outline {
+  background: var(--primary-light);
+  border: 1.5px solid var(--primary);
+  color: var(--primary);
+}
+
+.btn-outline:hover {
+  background: var(--primary);
+  color: #FFF;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  padding: 90px 48px 120px;
+  max-width: 1360px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.hero-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--primary-light);
+  border: 1px solid rgba(37, 99, 235, 0.2);
+  color: var(--primary-dark);
+  padding: 8px 20px;
+  border-radius: var(--radius-full);
+  font-weight: 700;
+  font-size: 0.85rem;
+  margin-bottom: 24px;
+}
+
+.hero-title {
+  font-family: var(--font-heading);
+  font-size: 3.75rem;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 24px;
+  color: #0F172A;
+  letter-spacing: -1px;
+}
+
+.hero-title span {
+  background: linear-gradient(135deg, #2563EB 0%, #0284C7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-desc {
+  font-size: 1.2rem;
+  color: var(--text-muted);
+  margin-bottom: 40px;
+  max-width: 600px;
+  line-height: 1.7;
+}
+
+/* Light Card Calculator */
+.glass-calculator {
+  background: var(--bg-surface);
+  border-radius: var(--radius-lg);
+  padding: 40px;
+  border: 1px solid var(--border-light);
+  box-shadow: 0 25px 50px -12px rgba(37, 99, 235, 0.1);
+  position: relative;
+}
+
+.glass-calculator::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+}
+
+.calc-header h3 {
+  font-family: var(--font-heading);
+  font-size: 1.6rem;
+  font-weight: 800;
+  margin-bottom: 6px;
+  color: var(--text-main);
+}
+
+/* Option Chips */
+.service-options {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.service-chip {
+  background: #F8FAFC;
+  border: 1.5px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 16px 12px;
+  text-align: center;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.service-chip:hover {
+  border-color: var(--primary);
+  background: var(--primary-light);
+}
+
+.service-chip.active {
+  border-color: var(--primary);
+  background: var(--primary-light);
+  box-shadow: 0 0 16px var(--primary-glow);
+}
+
+/* Live Price Box */
+.price-display-box {
+  background: var(--primary-light);
+  border: 1.5px solid rgba(37, 99, 235, 0.2);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 28px;
+}
+
+.price-num {
+  font-family: var(--font-heading);
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: var(--primary-dark);
+  line-height: 1;
+}
+
+/* Sections */
+.section {
+  padding: 100px 48px;
+  max-width: 1360px;
+  margin: 0 auto;
+}
+
+.section-header {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 64px;
+}
+
+.section-tag {
+  color: var(--primary);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 1.5px;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.section-title {
+  font-family: var(--font-heading);
+  font-size: 2.75rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  color: var(--text-main);
+}
+
+/* Modern Card Grid */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 32px;
+}
+
+.modern-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: 36px;
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+}
+
+.modern-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--primary);
+  box-shadow: 0 20px 40px rgba(37, 99, 235, 0.12);
+}
+
+.card-icon-box {
+  width: 60px;
+  height: 60px;
+  background: var(--primary-light);
+  color: var(--primary);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+/* FAQ Accordion */
+.faq-list {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.faq-box {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  margin-bottom: 16px;
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.faq-box.open {
+  border-color: var(--primary);
+}
+
+.faq-q {
+  padding: 24px 32px;
+  font-weight: 700;
+  font-size: 1.15rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  color: var(--text-main);
+}
+
+/* Floating WhatsApp Button */
+.floating-wa {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  z-index: 999;
+  background: linear-gradient(135deg, #25D366, #128C7E);
+  color: #FFF;
+  width: 64px;
+  height: 64px;
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 30px var(--whatsapp-glow);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.floating-wa:hover {
+  transform: scale(1.12);
+}
+
+/* Footer */
+footer {
+  background: #0F172A;
+  color: #F8FAFC;
+  padding: 80px 48px 40px;
+}
+
+.footer-grid {
+  max-width: 1360px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr repeat(3, 1fr);
+  gap: 60px;
+  padding-bottom: 60px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 1024px) {
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 60px 24px;
+  }
+  .section {
+    padding: 60px 24px;
+  }
+  .hero-title {
+    font-size: 2.75rem;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
