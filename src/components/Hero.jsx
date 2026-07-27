@@ -38,7 +38,7 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Visual Service Highlights Card replacing calculator */}
+      {/* Visual Service Feature Card */}
       <div className="glass-calculator" style={{ padding: '36px' }}>
         <div style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', background: '#EFF6FF', color: '#2563EB', padding: '4px 12px', borderRadius: '999px', fontSize: '0.75rem', fontWeight: 700, textTransform: 'uppercase', marginBottom: '16px' }}>
           <Sparkles size={14} /> Quick Booking Overview
