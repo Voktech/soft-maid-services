@@ -7,6 +7,7 @@ import HowItWorks from './components/HowItWorks';
 import Testimonials from './components/Testimonials';
 import FAQAccordion from './components/FAQAccordion';
 import Footer from './components/Footer';
+import WhatsAppIcon from './components/WhatsAppIcon';
 
 export default function App() {
   return (
@@ -26,7 +27,7 @@ export default function App() {
         rel="noreferrer"
         title="Chat on WhatsApp (+974 7775 6100)"
       >
-        💬
+        <WhatsAppIcon size={34} color="#FFFFFF" />
       </a>
     </div>
   );

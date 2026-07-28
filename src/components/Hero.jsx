@@ -1,5 +1,6 @@
 import React from 'react';
-import { Star, ShieldCheck, CheckCircle2, MessageSquare, Phone, HeartHandshake, Calendar, Sparkles } from 'lucide-react';
+import { Star, ShieldCheck, CheckCircle2, Phone, HeartHandshake, Calendar } from 'lucide-react';
+import WhatsAppIcon from './WhatsAppIcon';
 
 export default function Hero() {
   return (
@@ -18,10 +19,12 @@ export default function Hero() {
 
         <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', marginBottom: '32px' }}>
           <a href="https://wa.me/97477756100?text=Hi!%20I%20would%20like%20to%20book%20a%20housekeeper%20or%20caregiver%20in%20Qatar." className="btn btn-whatsapp" target="_blank" rel="noreferrer">
-            <MessageSquare size={18} /> WhatsApp Booking (+974 7775 6100)
+            <WhatsAppIcon size={20} color="#FFFFFF" />
+            <span>WhatsApp Booking (+974 7775 6100)</span>
           </a>
           <a href="tel:+97471456777" className="btn btn-outline">
-            <Phone size={18} /> Call +974 7145 6777
+            <Phone size={18} />
+            <span>Call +974 7145 6777</span>
           </a>
         </div>
 
@@ -75,8 +78,8 @@ export default function Hero() {
                 <div style={{ fontSize: '0.8rem', color: '#526B82' }}>Housekeeping • Elderly Care • Babysitting</div>
               </div>
             </div>
-            <a href="https://wa.me/97477756100" target="_blank" rel="noreferrer" style={{ background: '#0084C7', color: '#FFF', padding: '8px 14px', borderRadius: '999px', fontSize: '0.8rem', fontWeight: 700, textDecoration: 'none' }}>
-              Book Now
+            <a href="https://wa.me/97477756100" target="_blank" rel="noreferrer" style={{ background: '#25D366', color: '#FFF', padding: '10px 16px', borderRadius: '999px', fontSize: '0.85rem', fontWeight: 700, textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '6px' }}>
+              <WhatsAppIcon size={16} color="#FFFFFF" /> Book Now
             </a>
           </div>
         </div>

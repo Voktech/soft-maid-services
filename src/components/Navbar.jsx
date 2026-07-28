@@ -1,4 +1,5 @@
 import React from 'react';
+import WhatsAppIcon from './WhatsAppIcon';
 
 export default function Navbar() {
   return (
@@ -20,7 +21,8 @@ export default function Navbar() {
       </ul>
       <div>
         <a href="https://wa.me/97477756100?text=Hi%20Soft%20Maid%20Services%2C%20I%20want%20to%20inquire%20about%20booking%20a%20maid." className="btn btn-whatsapp" target="_blank" rel="noreferrer">
-          💬 WhatsApp Booking
+          <WhatsAppIcon size={20} color="#FFFFFF" />
+          <span>WhatsApp Booking</span>
         </a>
       </div>
     </nav>
