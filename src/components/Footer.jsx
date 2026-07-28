@@ -9,41 +9,47 @@ export default function Footer() {
             <img src="/logo.png" alt="Soft Maid Logo" style={{ height: '48px', width: 'auto', borderRadius: '50%' }} />
             <div>
               <h3 style={{ fontSize: '1.4rem', color: '#FFFFFF', lineHeight: 1.1 }}>Soft Maid</h3>
-              <div style={{ fontSize: '0.75rem', color: '#B0C4DE' }}>Cleaning & Hospitality</div>
+              <div style={{ fontSize: '0.75rem', color: '#B0C4DE' }}>Cleaning & Hospitality Services</div>
             </div>
           </div>
-          <p style={{ color: '#94A3B8', marginBottom: '20px' }}>Qatar's premier professional maid and housekeeping agency delivering pristine cleanliness to homes, villas, and offices.</p>
-          <p style={{ color: '#94A3B8' }}>📞 +974 7775 6100 | ✉️ info@softmaid.qa</p>
+          <p style={{ color: '#94A3B8', marginBottom: '16px' }}>
+            Soft Maid Cleaning and Hospitality Services. Daily, Weekly, Monthly, & Yearly housekeeping and elderly care in Qatar.
+          </p>
+          <p style={{ color: '#94A3B8', fontSize: '0.9rem', marginBottom: '8px' }}>📍 Building 52 Bin Omran, Doha, Qatar</p>
+          <p style={{ color: '#94A3B8', fontSize: '0.9rem' }}>📞 +974 7775 6100 | +974 7145 6777</p>
         </div>
 
         <div>
-          <h4 style={{ marginBottom: '16px' }}>Quick Links</h4>
+          <h4 style={{ marginBottom: '16px' }}>Services</h4>
           <ul style={{ listStyle: 'none', lineHeight: 2, color: '#94A3B8' }}>
-            <li><a href="#services" style={{ color: 'inherit', textDecoration: 'none' }}>Services</a></li>
-            <li><a href="#how-it-works" style={{ color: 'inherit', textDecoration: 'none' }}>How It Works</a></li>
-            <li><a href="#testimonials" style={{ color: 'inherit', textDecoration: 'none' }}>Reviews</a></li>
-            <li><a href="#faq" style={{ color: 'inherit', textDecoration: 'none' }}>FAQ</a></li>
+            <li>Elderly Care Assistance</li>
+            <li>Hourly Housekeeping</li>
+            <li>Deep Villa Cleaning</li>
+            <li>Live-in Maids & Nannies</li>
+            <li>Commercial Hospitality</li>
           </ul>
         </div>
 
         <div>
-          <h4 style={{ marginBottom: '16px' }}>Coverage Areas</h4>
+          <h4 style={{ marginBottom: '16px' }}>Contract Types</h4>
           <ul style={{ listStyle: 'none', lineHeight: 2, color: '#94A3B8' }}>
-            <li>Doha & West Bay</li>
-            <li>The Pearl-Qatar</li>
-            <li>Lusail City</li>
-            <li>Al Rayyan & Al Wakra</li>
+            <li>Daily Bookings</li>
+            <li>Weekly Cleaning</li>
+            <li>Monthly Housekeeping</li>
+            <li>Yearly Maid Contracts</li>
           </ul>
         </div>
 
         <div>
-          <h4 style={{ marginBottom: '16px' }}>Working Hours</h4>
-          <p style={{ color: '#94A3B8' }}>Monday - Sunday<br />8:00 AM - 10:00 PM</p>
+          <h4 style={{ marginBottom: '16px' }}>Social & Contact</h4>
+          <p style={{ color: '#94A3B8', marginBottom: '8px' }}>Instagram: @soft.maid.service</p>
+          <p style={{ color: '#94A3B8', marginBottom: '8px' }}>Facebook: Soft Maid Services</p>
+          <p style={{ color: '#94A3B8' }}>Working Hours: Daily 8am - 10pm</p>
         </div>
       </div>
 
       <div style={{ maxWidth: '1360px', margin: '20px auto 0', textAlign: 'center', color: '#94A3B8', fontSize: '0.875rem' }}>
-        &copy; 2026 Soft Maid Cleaning & Hospitality Qatar. All rights reserved. Powered by Voktech.
+        &copy; 2026 Soft Maid Cleaning & Hospitality Services Qatar. All rights reserved. Powered by Voktech.
       </div>
     </footer>
   );

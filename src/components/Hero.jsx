@@ -1,5 +1,5 @@
 import React from 'react';
-import { Star, ShieldCheck, CheckCircle2, MessageSquare, Phone, Sparkles, Clock, MapPin } from 'lucide-react';
+import { Star, ShieldCheck, CheckCircle2, MessageSquare, Phone, HeartHandshake, Calendar, Sparkles } from 'lucide-react';
 
 export default function Hero() {
   return (
@@ -7,84 +7,79 @@ export default function Hero() {
       <div className="hero-content">
         <div className="hero-pill">
           <Star size={16} fill="#0084C7" color="#0084C7" />
-          <span>Qatar's Top Rated Housekeeping Agency</span>
+          <span>Soft Maid Cleaning & Hospitality Services 🧹</span>
         </div>
         <h1 className="hero-title">
-          Professional & Vetted <span>Maid Services</span> in Qatar
+          Trusted Housekeeping & <span>Elderly Care</span> in Qatar
         </h1>
         <p className="hero-desc">
-          Soft Maid Cleaning & Hospitality — Enjoy a spotlessly clean home with our trusted, background-checked housekeepers in Qatar.
+          Professional, background-checked housekeepers, elderly caregivers, and hospitality specialists. Available for Daily, Weekly, Monthly & Yearly contracts across Doha and all Qatar.
         </p>
 
-        <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', marginBottom: '40px' }}>
-          <a href="https://wa.me/97477756100?text=Hi!%20I%20would%20like%20to%20book%20a%20housekeeper%20in%20Qatar." className="btn btn-whatsapp" target="_blank" rel="noreferrer">
-            <MessageSquare size={18} /> Book via WhatsApp (+974 7775 6100)
+        <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', marginBottom: '32px' }}>
+          <a href="https://wa.me/97477756100?text=Hi!%20I%20would%20like%20to%20book%20a%20housekeeper%20or%20caregiver%20in%20Qatar." className="btn btn-whatsapp" target="_blank" rel="noreferrer">
+            <MessageSquare size={18} /> WhatsApp Booking (+974 7775 6100)
           </a>
-          <a href="tel:+97477756100" className="btn btn-outline">
-            <Phone size={18} /> Direct Call (+974 7775 6100)
+          <a href="tel:+97471456777" className="btn btn-outline">
+            <Phone size={18} /> Call +974 7145 6777
           </a>
         </div>
 
-        <div style={{ display: 'flex', gap: '24px', paddingTop: '24px', borderTop: '1px solid #E2E8F0' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontWeight: 600, fontSize: '0.9rem' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '16px', paddingTop: '20px', borderTop: '1px solid #E2E8F0' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontWeight: 700, fontSize: '0.85rem' }}>
             <CheckCircle2 size={18} color="#0084C7" /> Police Cleared
           </div>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontWeight: 600, fontSize: '0.9rem' }}>
-            <CheckCircle2 size={18} color="#0084C7" /> Same-Day Available
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontWeight: 700, fontSize: '0.85rem' }}>
+            <Calendar size={18} color="#0084C7" /> Daily to Yearly
           </div>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontWeight: 600, fontSize: '0.9rem' }}>
-            <ShieldCheck size={18} color="#0084C7" /> 100% Guaranteed
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontWeight: 700, fontSize: '0.85rem' }}>
+            <ShieldCheck size={18} color="#0084C7" /> Bin Omran Based
           </div>
         </div>
       </div>
 
-      {/* Visual Service Feature Card */}
-      <div className="glass-calculator" style={{ padding: '36px' }}>
-        <div style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', background: '#F0F9FF', color: '#0084C7', padding: '4px 12px', borderRadius: '999px', fontSize: '0.75rem', fontWeight: 700, textTransform: 'uppercase', marginBottom: '16px' }}>
-          <Sparkles size={14} /> Soft Maid Overview
+      {/* Hero Visual Showcase Image Container */}
+      <div style={{ position: 'relative' }}>
+        <div style={{
+          borderRadius: '28px',
+          overflow: 'hidden',
+          boxShadow: '0 25px 50px -12px rgba(0, 75, 135, 0.25)',
+          border: '4px solid #FFFFFF',
+          position: 'relative'
+        }}>
+          <img
+            src="/hero-maid.jpg"
+            alt="Soft Maid Professional Housekeeper Qatar"
+            style={{ width: '100%', height: '480px', objectFit: 'cover', display: 'block' }}
+          />
+          <div style={{
+            position: 'absolute',
+            bottom: '20px',
+            left: '20px',
+            right: '20px',
+            background: 'rgba(255, 255, 255, 0.95)',
+            backdropFilter: 'blur(12px)',
+            borderRadius: '16px',
+            padding: '16px 20px',
+            display: 'flex',
+            alignItems: 'center',
+            justify: 'space-between',
+            boxShadow: '0 10px 25px rgba(0,0,0,0.1)'
+          }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+              <div style={{ background: '#F0F9FF', color: '#0084C7', padding: '10px', borderRadius: '12px' }}>
+                <HeartHandshake size={22} />
+              </div>
+              <div>
+                <div style={{ fontWeight: 800, fontSize: '0.95rem', color: '#06233B' }}>Vetted & Trained Caregivers</div>
+                <div style={{ fontSize: '0.8rem', color: '#526B82' }}>Housekeeping • Elderly Care • Babysitting</div>
+              </div>
+            </div>
+            <a href="https://wa.me/97477756100" target="_blank" rel="noreferrer" style={{ background: '#0084C7', color: '#FFF', padding: '8px 14px', borderRadius: '999px', fontSize: '0.8rem', fontWeight: 700, textDecoration: 'none' }}>
+              Book Now
+            </a>
+          </div>
         </div>
-        <h3 style={{ fontSize: '1.5rem', fontWeight: 800, marginBottom: '8px', color: '#06233B' }}>
-          Cleaning & Hospitality
-        </h3>
-        <p style={{ color: '#526B82', fontSize: '0.9rem', marginBottom: '24px' }}>
-          Instant dispatch across Doha, The Pearl, Lusail, West Bay & Al Wakra.
-        </p>
-
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', marginBottom: '28px' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '14px', background: '#F8FAFC', padding: '14px 16px', borderRadius: '12px', border: '1px solid #E2E8F0' }}>
-            <div style={{ background: '#F0F9FF', color: '#0084C7', width: '40px', height: '40px', borderRadius: '10px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-              <Clock size={20} />
-            </div>
-            <div>
-              <div style={{ fontWeight: 700, fontSize: '0.95rem' }}>Hourly Housekeeping</div>
-              <div style={{ fontSize: '0.8rem', color: '#526B82' }}>Flexible scheduling starting from 35 QAR/hr</div>
-            </div>
-          </div>
-
-          <div style={{ display: 'flex', alignItems: 'center', gap: '14px', background: '#F8FAFC', padding: '14px 16px', borderRadius: '12px', border: '1px solid #E2E8F0' }}>
-            <div style={{ background: '#F0F9FF', color: '#0084C7', width: '40px', height: '40px', borderRadius: '10px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-              <ShieldCheck size={20} />
-            </div>
-            <div>
-              <div style={{ fontWeight: 700, fontSize: '0.95rem' }}>Deep Villa Cleaning</div>
-              <div style={{ fontSize: '0.8rem', color: '#526B82' }}>Complete scrubbing & sanitization</div>
-            </div>
-          </div>
-
-          <div style={{ display: 'flex', alignItems: 'center', gap: '14px', background: '#F8FAFC', padding: '14px 16px', borderRadius: '12px', border: '1px solid #E2E8F0' }}>
-            <div style={{ background: '#F0F9FF', color: '#0084C7', width: '40px', height: '40px', borderRadius: '10px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-              <MapPin size={20} />
-            </div>
-            <div>
-              <div style={{ fontWeight: 700, fontSize: '0.95rem' }}>Coverage Areas</div>
-              <div style={{ fontSize: '0.8rem', color: '#526B82' }}>All residential sectors across Qatar</div>
-            </div>
-          </div>
-        </div>
-
-        <a href="https://wa.me/97477756100?text=Hi!%20I%20would%20like%20to%20book%20a%20housekeeper%20in%20Qatar." className="btn btn-whatsapp" style={{ width: '100%', justifyContent: 'center' }} target="_blank" rel="noreferrer">
-          <MessageSquare size={18} /> Book Housekeeper Now
-        </a>
       </div>
     </section>
   );
