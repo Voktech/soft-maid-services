@@ -1,31 +1,31 @@
 /* ==========================================================================
-   Soft Maid Services Qatar - Luxury Light Mode Blue Theme
+   Soft Maid Services Qatar - Official Brand Color Theme & Layout
    ========================================================================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap');
 
 :root {
-  /* Light Mode Royal Blue Palette */
+  /* Brand Colors Matched to Official Logo */
   --bg-light: #F4F8FA;
   --bg-surface: #FFFFFF;
   --bg-card: #FFFFFF;
-  --bg-glass: rgba(255, 255, 255, 0.9);
+  --bg-glass: rgba(255, 255, 255, 0.92);
   
-  --primary: #2563EB;
-  --primary-dark: #1D4ED8;
-  --primary-light: #EFF6FF;
-  --primary-glow: rgba(37, 99, 235, 0.25);
-  --secondary: #0284C7;
+  --primary: #0084C7;
+  --primary-dark: #004B87;
+  --primary-light: #F0F9FF;
+  --primary-glow: rgba(0, 132, 199, 0.25);
+  --secondary: #00B4D8;
   --accent-blue: #38BDF8;
   
   --whatsapp: #25D366;
   --whatsapp-dark: #128C7E;
   --whatsapp-glow: rgba(37, 211, 102, 0.35);
   
-  --text-main: #0F172A;
-  --text-muted: #64748B;
+  --text-main: #06233B;
+  --text-muted: #526B82;
   --border-light: #E2E8F0;
-  --border-blue: rgba(37, 99, 235, 0.3);
+  --border-blue: rgba(0, 132, 199, 0.3);
   
   --radius-sm: 10px;
   --radius-md: 18px;
@@ -57,8 +57,8 @@ body {
 
 /* Top Notification Banner */
 .top-bar {
-  background: #0F172A;
-  color: #94A3B8;
+  background: #022B4D;
+  color: #B0C4DE;
   padding: 10px 32px;
   font-size: 0.85rem;
   display: flex;
@@ -82,11 +82,11 @@ body {
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--border-light);
-  padding: 18px 48px;
+  padding: 14px 48px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+  box-shadow: 0 4px 20px rgba(0, 59, 115, 0.05);
 }
 
 .logo {
@@ -95,22 +95,19 @@ body {
   gap: 14px;
   text-decoration: none;
   font-family: var(--font-heading);
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   font-weight: 800;
-  color: var(--text-main);
+  color: var(--primary-dark);
   letter-spacing: -0.5px;
 }
 
-.logo-badge {
-  background: linear-gradient(135deg, var(--primary), var(--secondary));
-  color: #FFF;
-  width: 42px;
-  height: 42px;
-  border-radius: var(--radius-sm);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 4px 14px var(--primary-glow);
+.logo-img {
+  height: 52px;
+  width: 52px;
+  object-fit: contain;
+  border-radius: 50%;
+  box-shadow: 0 4px 14px rgba(0, 132, 199, 0.2);
+  border: 2px solid var(--primary-light);
 }
 
 .nav-links {
@@ -155,7 +152,7 @@ body {
 
 .btn-primary:hover {
   transform: translateY(-3px);
-  box-shadow: 0 12px 28px rgba(37, 99, 235, 0.4);
+  box-shadow: 0 12px 28px rgba(0, 132, 199, 0.4);
 }
 
 .btn-whatsapp {
@@ -172,7 +169,7 @@ body {
 .btn-outline {
   background: var(--primary-light);
   border: 1.5px solid var(--primary);
-  color: var(--primary);
+  color: var(--primary-dark);
 }
 
 .btn-outline:hover {
@@ -183,7 +180,7 @@ body {
 /* Hero Section */
 .hero {
   position: relative;
-  padding: 90px 48px 120px;
+  padding: 80px 48px 110px;
   max-width: 1360px;
   margin: 0 auto;
   display: grid;
@@ -197,7 +194,7 @@ body {
   align-items: center;
   gap: 10px;
   background: var(--primary-light);
-  border: 1px solid rgba(37, 99, 235, 0.2);
+  border: 1px solid rgba(0, 132, 199, 0.25);
   color: var(--primary-dark);
   padding: 8px 20px;
   border-radius: var(--radius-full);
@@ -212,12 +209,12 @@ body {
   font-weight: 800;
   line-height: 1.1;
   margin-bottom: 24px;
-  color: #0F172A;
+  color: var(--text-main);
   letter-spacing: -1px;
 }
 
 .hero-title span {
-  background: linear-gradient(135deg, #2563EB 0%, #0284C7 100%);
+  background: linear-gradient(135deg, #0084C7 0%, #004B87 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -230,13 +227,13 @@ body {
   line-height: 1.7;
 }
 
-/* Light Card Calculator */
+/* Feature Overview Card */
 .glass-calculator {
   background: var(--bg-surface);
   border-radius: var(--radius-lg);
   padding: 40px;
   border: 1px solid var(--border-light);
-  box-shadow: 0 25px 50px -12px rgba(37, 99, 235, 0.1);
+  box-shadow: 0 25px 50px -12px rgba(0, 75, 135, 0.12);
   position: relative;
 }
 
@@ -249,63 +246,6 @@ body {
   height: 4px;
   background: linear-gradient(90deg, var(--primary), var(--secondary));
   border-radius: var(--radius-lg) var(--radius-lg) 0 0;
-}
-
-.calc-header h3 {
-  font-family: var(--font-heading);
-  font-size: 1.6rem;
-  font-weight: 800;
-  margin-bottom: 6px;
-  color: var(--text-main);
-}
-
-/* Option Chips */
-.service-options {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
-  margin-bottom: 24px;
-}
-
-.service-chip {
-  background: #F8FAFC;
-  border: 1.5px solid var(--border-light);
-  border-radius: var(--radius-md);
-  padding: 16px 12px;
-  text-align: center;
-  cursor: pointer;
-  transition: var(--transition);
-}
-
-.service-chip:hover {
-  border-color: var(--primary);
-  background: var(--primary-light);
-}
-
-.service-chip.active {
-  border-color: var(--primary);
-  background: var(--primary-light);
-  box-shadow: 0 0 16px var(--primary-glow);
-}
-
-/* Live Price Box */
-.price-display-box {
-  background: var(--primary-light);
-  border: 1.5px solid rgba(37, 99, 235, 0.2);
-  border-radius: var(--radius-md);
-  padding: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 28px;
-}
-
-.price-num {
-  font-family: var(--font-heading);
-  font-size: 2.4rem;
-  font-weight: 800;
-  color: var(--primary-dark);
-  line-height: 1;
 }
 
 /* Sections */
@@ -361,14 +301,14 @@ body {
 .modern-card:hover {
   transform: translateY(-8px);
   border-color: var(--primary);
-  box-shadow: 0 20px 40px rgba(37, 99, 235, 0.12);
+  box-shadow: 0 20px 40px rgba(0, 132, 199, 0.15);
 }
 
 .card-icon-box {
   width: 60px;
   height: 60px;
   background: var(--primary-light);
-  color: var(--primary);
+  color: var(--primary-dark);
   border-radius: var(--radius-md);
   display: flex;
   align-items: center;
@@ -431,7 +371,7 @@ body {
 
 /* Footer */
 footer {
-  background: #0F172A;
+  background: #021B33;
   color: #F8FAFC;
   padding: 80px 48px 40px;
 }

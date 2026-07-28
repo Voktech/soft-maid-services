@@ -14,7 +14,7 @@ export default function ServicesGrid() {
   return (
     <section className="section" id="services">
       <div className="section-header">
-        <span className="section-tag">High Quality Cleaning</span>
+        <span className="section-tag">Soft Maid Cleaning & Hospitality</span>
         <h2 className="section-title">Our Premium Services in Qatar</h2>
         <p className="section-desc">Tailored, reliable housekeeping solutions to match your family's lifestyle and schedule.</p>
       </div>
@@ -22,19 +22,20 @@ export default function ServicesGrid() {
       <div className="cards-grid">
         {services.map((s, idx) => {
           const IconComp = s.icon;
+          const waUrl = `https://wa.me/97477756100?text=Hi%20Soft%20Maid%20Services%2C%20I%20want%20to%20book%20${encodeURIComponent(s.name)}.`;
           return (
             <div key={idx} className="modern-card">
               <div>
                 <div className="card-icon-box">
                   <IconComp size={28} />
                 </div>
-                <h3 style={{ fontSize: '1.35rem', fontWeight: 700, marginBottom: '12px', color: '#0F172A' }}>{s.name}</h3>
-                <p style={{ color: '#64748B', fontSize: '0.95rem', marginBottom: '24px' }}>{s.desc}</p>
+                <h3 style={{ fontSize: '1.35rem', fontWeight: 700, marginBottom: '12px', color: '#06233B' }}>{s.name}</h3>
+                <p style={{ color: '#526B82', fontSize: '0.95rem', marginBottom: '24px' }}>{s.desc}</p>
               </div>
               <div>
-                <div style={{ fontSize: '1.25rem', fontWeight: 800, color: '#2563EB', marginBottom: '16px' }}>{s.price}</div>
-                <a href="#calculator" className="btn btn-outline" style={{ width: '100%', justifyContent: 'center' }}>
-                  Book Service
+                <div style={{ fontSize: '1.25rem', fontWeight: 800, color: '#0084C7', marginBottom: '16px' }}>{s.price}</div>
+                <a href={waUrl} className="btn btn-outline" style={{ width: '100%', justifyContent: 'center' }} target="_blank" rel="noreferrer">
+                  Book via WhatsApp
                 </a>
               </div>
             </div>

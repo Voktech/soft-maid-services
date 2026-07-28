@@ -6,18 +6,18 @@ export default function TopBar() {
     <div className="top-bar">
       <div style={{ display: 'flex', gap: '24px' }}>
         <div className="top-bar-item">
-          <MapPin size={14} color="#00D2B8" />
+          <MapPin size={14} color="#38BDF8" />
           <span>Doha, Pearl-Qatar, Lusail, West Bay & Al Wakra</span>
         </div>
         <div className="top-bar-item">
-          <Clock size={14} color="#00D2B8" />
+          <Clock size={14} color="#38BDF8" />
           <span>Working Hours: 8:00 AM - 10:00 PM (Daily)</span>
         </div>
       </div>
       <div>
-        <a href="tel:+97477123456" className="top-bar-item" style={{ textDecoration: 'none' }}>
-          <Phone size={14} color="#00D2B8" />
-          <span>+974 7712 3456</span>
+        <a href="tel:+97477756100" className="top-bar-item" style={{ textDecoration: 'none' }}>
+          <Phone size={14} color="#38BDF8" />
+          <span>+974 7775 6100</span>
         </a>
       </div>
     </div>
