@@ -1,6 +1,5 @@
 import React from 'react';
 import { Heart, Sparkles, ShieldCheck, Home, Baby, Building2 } from 'lucide-react';
-import WhatsAppIcon from './WhatsAppIcon';
 
 const services = [
   {
@@ -85,7 +84,7 @@ export default function ServicesGrid() {
                   <p style={{ color: '#526B82', fontSize: '0.92rem', marginBottom: '24px', lineHeight: 1.6 }}>{s.desc}</p>
                 </div>
                 <a href={waUrl} className="btn btn-whatsapp" style={{ width: '100%', justifyContent: 'center' }} target="_blank" rel="noreferrer">
-                  <WhatsAppIcon size={18} color="#FFFFFF" />
+                  <img src="/whatsapp-icon.png" alt="WhatsApp" style={{ height: '20px', width: '20px', borderRadius: '4px' }} />
                   <span>{s.btnText}</span>
                 </a>
               </div>

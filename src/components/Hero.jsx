@@ -1,6 +1,5 @@
 import React from 'react';
 import { Star, ShieldCheck, CheckCircle2, Phone, HeartHandshake, Calendar } from 'lucide-react';
-import WhatsAppIcon from './WhatsAppIcon';
 
 export default function Hero() {
   return (
@@ -19,7 +18,7 @@ export default function Hero() {
 
         <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', marginBottom: '32px' }}>
           <a href="https://wa.me/97477756100?text=Hi!%20I%20would%20like%20to%20book%20a%20housekeeper%20or%20caregiver%20in%20Qatar." className="btn btn-whatsapp" target="_blank" rel="noreferrer">
-            <WhatsAppIcon size={20} color="#FFFFFF" />
+            <img src="/whatsapp-icon.png" alt="WhatsApp" style={{ height: '22px', width: '22px', borderRadius: '4px', display: 'inline-block' }} />
             <span>WhatsApp Booking (+974 7775 6100)</span>
           </a>
           <a href="tel:+97471456777" className="btn btn-outline">
@@ -78,8 +77,9 @@ export default function Hero() {
                 <div style={{ fontSize: '0.8rem', color: '#526B82' }}>Housekeeping • Elderly Care • Babysitting</div>
               </div>
             </div>
-            <a href="https://wa.me/97477756100" target="_blank" rel="noreferrer" style={{ background: '#25D366', color: '#FFF', padding: '10px 16px', borderRadius: '999px', fontSize: '0.85rem', fontWeight: 700, textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '6px' }}>
-              <WhatsAppIcon size={16} color="#FFFFFF" /> Book Now
+            <a href="https://wa.me/97477756100" target="_blank" rel="noreferrer" style={{ background: '#25D366', color: '#FFF', padding: '10px 16px', borderRadius: '999px', fontSize: '0.85rem', fontWeight: 700, textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '8px' }}>
+              <img src="/whatsapp-icon.png" alt="WhatsApp" style={{ height: '18px', width: '18px', borderRadius: '3px' }} />
+              <span>Book Now</span>
             </a>
           </div>
         </div>
